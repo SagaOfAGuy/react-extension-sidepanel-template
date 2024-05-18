@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener((()=>{console.log("Hello from background.js!")})),chrome.sidePanel.setOptions({path:"sidepanel.html",enabled:!0}),chrome.sidePanel.setPanelBehavior({openPanelOnActionClick:!0}).catch((e=>console.error(e)));

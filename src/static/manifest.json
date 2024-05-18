@@ -1,0 +1,27 @@
+{
+  "name": "Sidepanel Extension Template",
+  "description": "Base Sidepanel Chrome extension that uses react and DaisyUI",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    
+    "default_title": "Basic Sidepanel Extension",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["storage", "tabs","sidePanel", "activeTab"],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}

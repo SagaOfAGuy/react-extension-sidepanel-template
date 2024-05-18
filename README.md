@@ -1,2 +1,2 @@
 # react-extension-sidepanel-template
-Base sidepanel Chrome extension template to build other projects off of
+Base sidepanel Chrome extension template that uses DaisyUI and React. 
